@@ -1,0 +1,36 @@
+.dropdown .trigger {
+    border-bottom: 3px groove olive;
+    position: relative; 
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.dropdown .trigger::after {
+    content: '>';
+    position: absolute;
+    display: inline-block;
+    right: 0.75rem;
+    transform: rotate(90deg) scale(1, 1.5);
+    font-weight: bold;
+    color: red;
+    transition: all .3s;
+}
+
+.dropdown .trigger.active::after {
+    transform: rotate(-90deg) scale(1, 1.5);
+    color: lime;
+}
+
+.dropdown .content {
+    max-height: 0;
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+    transition: max-height .5s ease;
+    overflow: hidden;
+}
+
+.dropdown .content.open {
+    margin-top: 1.5rem;
+    max-height: 500px;
+    transition: max-height 1s ease;
+}
