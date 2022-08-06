@@ -1,4 +1,4 @@
-.tooltip {
+.ugly-tooltip {
     position: relative;
     border-bottom: 1 px dotted olive;
     color: olive;
@@ -18,7 +18,7 @@
     transition: opacity .3s;
 }
 
-.tooltip:hover .tip {
+.ugly-tooltip:hover .tip {
     visibility: visible;
     opacity: 1;
 }

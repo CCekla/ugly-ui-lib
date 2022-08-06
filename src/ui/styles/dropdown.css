@@ -1,11 +1,11 @@
-.dropdown .trigger {
+.ugly-dropdown .ugly-trigger {
     border-bottom: 3px groove olive;
     position: relative; 
     padding: 1rem 2rem;
     cursor: pointer;
 }
 
-.dropdown .trigger::after {
+.ugly-dropdown .ugly-trigger::after {
     content: '>';
     position: absolute;
     display: inline-block;
@@ -16,12 +16,12 @@
     transition: all .3s;
 }
 
-.dropdown .trigger.active::after {
+.ugly-dropdown .ugly-trigger.active::after {
     transform: rotate(-90deg) scale(1, 1.5);
     color: lime;
 }
 
-.dropdown .content {
+.ugly-dropdown .ugly-content {
     max-height: 0;
     padding: 0 1.5rem;
     margin-top: 1.5rem;
@@ -29,7 +29,7 @@
     overflow: hidden;
 }
 
-.dropdown .content.open {
+.ugly-dropdown .ugly-content.open {
     margin-top: 1.5rem;
     max-height: 500px;
     transition: max-height 1s ease;

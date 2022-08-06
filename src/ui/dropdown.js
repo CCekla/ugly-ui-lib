@@ -3,8 +3,8 @@ import './styles/dropdown.css';
 class Dropdown {
     constructor(container) {
         this.container = container;
-        this.trigger = container.querySelector('.trigger');
-        this.content = container.querySelector('.content');
+        this.trigger = container.querySelector('.ugly-trigger');
+        this.content = container.querySelector('.ugly-content');
     }
     init() {
         this.trigger.addEventListener('click', () => {
