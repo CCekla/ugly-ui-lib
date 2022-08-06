@@ -1,0 +1,16 @@
+.ugly-snackbar {
+    display: none;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+}
+
+.ugly-snackbar.show {
+    display: block;
+}

@@ -13,6 +13,17 @@
             margin: 3rem;
             margin-top: 6rem;
         }
+        .ugly-btn {
+            display: block;
+            background-color: olive;
+            color: white;
+            padding: 12px 28px;
+            margin: 2rem auto;
+            border-radius: 50px;
+            border-color: transparent;
+            text-align: center;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +62,45 @@
                     Donec ac tortor id felis sagittis gravida eu viverra lorem.
                 </p>
             </div>
+        </div>
+
+        <h2>Tabs</h2>
+        <!--tabs-->
+
+        <div class="ugly-tabs">
+            <ul>
+                <div class="ugly-trigger selected" data-target="tab1">Tab1</div>
+                <div class="ugly-trigger" data-target="tab2">Tab2</div>
+                <div class="ugly-trigger" data-target="tab3">Tab3</div>
+            </ul>
+            <div class="ugly-content open" id="tab1">
+                <h3>Tab1</h3>
+                <p>
+                    Praesent in faucibus nisl, sed aliquet magna. Phasellus finibus fermentum lacinia. Maecenas ut massa vehicula risus pharetra volutpat nec et risus. 
+                    Suspendisse dolor velit, imperdiet eu purus pharetra, dapibus luctus orci. Cras suscipit vel elit non congue. 
+                    Donec ac tortor id felis sagittis gravida eu viverra lorem.
+                </p>
+            </div>
+            <div class="ugly-content" id="tab2">
+                <h3>Tab2</h3>
+                <p>
+                    Praesent in faucibus nisl, sed aliquet magna. Phasellus finibus fermentum lacinia. Maecenas ut massa vehicula risus pharetra volutpat nec et risus. 
+                    Suspendisse dolor velit, imperdiet eu purus pharetra, dapibus luctus orci. Cras suscipit vel elit non congue. 
+                    Donec ac tortor id felis sagittis gravida eu viverra lorem.
+                </p>
+            </div>
+            <div class="ugly-content" id="tab3">
+                <h3>Tab3</h3>
+                <p>
+                    Praesent in faucibus nisl, sed aliquet magna. Phasellus finibus fermentum lacinia. Maecenas ut massa vehicula risus pharetra volutpat nec et risus. 
+                    Suspendisse dolor velit, imperdiet eu purus pharetra, dapibus luctus orci. Cras suscipit vel elit non congue. 
+                    Donec ac tortor id felis sagittis gravida eu viverra lorem.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <button class="ugly-btn ugly-snack-trigger">get a treat!</button>
         </div>
 
     </div>
