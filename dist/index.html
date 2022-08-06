@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ugly UI</title>
+    <style>
+        body {
+            font-size: calc(16px + (22 - 16) * (100vw - 378px) / (1439 - 378));
+        }
+        .container {
+            margin: 3rem;
+            margin-top: 6rem;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="container">
+
+        <!--tooltip-->
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget mi in nibh congue scelerisque. 
+            Cras congue consequat nulla, a sagittis ante placerat non. Quisque at facilisis erat. 
+            Curabitur feugiat euismod ante, a lacinia justo <span class="tooltip" data-msg="This is a tooltip">eleifend</span> quis. Morbi hendrerit elementum iaculis. 
+            Cras et mi ac velit convallis condimentum. 
+        </p>
+
+    </div>
     
+    <!--./bundle.js is served by webpack dev server, while assets/bundle.js is not-->
+    <!--I don't know why, polite suggestions are welcome in the comments. Thanks-->
     <script src="./bundle.js"></script>
 </body>
 </html>
